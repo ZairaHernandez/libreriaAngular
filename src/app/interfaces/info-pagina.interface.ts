@@ -1,6 +1,8 @@
 
-
-export interface InfoPagina{
+/**
+ * Interfaz que define la estructura de la información de una página.
+ */
+export interface InfoPagina {
   titulo?: string;
   email?: string;
   nombre_corto?: string;

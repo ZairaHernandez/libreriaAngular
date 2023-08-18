@@ -8,14 +8,17 @@ const app_routes: Routes = [
   { path: 'home', component: PrincipalComponent },
   { path: 'about', component: AboutComponent },
   { path: 'item', component: ItemComponent },
-  {path:'**', pathMatch: 'full', redirectTo: 'home'}
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  // Ruta comodín para redirigir a "home" en caso de ruta no encontrada
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(app_routes, {useHash: true})],
+  imports: [RouterModule.forRoot(app_routes, { useHash: true })],
+  // Configuración del módulo de rutas utilizando "RouterModule.forRoot"
+
   exports: [RouterModule]
+  // Exportación del módulo de rutas para que sea utilizado en otras partes de la aplicación
 })
-export class AppRoutingModule { 
-
-
+export class AppRoutingModule {
+  // Módulo de rutas principal de la aplicación
 }

@@ -1,7 +1,13 @@
 <header class="ae-container-fluid ae-container-fluid--full rk-header ">
+    <!-- Encabezado con contenedor y clases de estilo -->
+
     <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <!-- Checkbox para controlar el menú móvil -->
+
     <label for="mobile-menu">
+        <!-- Etiqueta que se asocia al checkbox -->
         <svg>
+            <!-- SVG para el ícono del menú -->
             <use xlink:href="assets/img/symbols.svg#bar"></use>
         </svg>
         <svg>
@@ -11,20 +17,45 @@
             <use xlink:href="assets/img/symbols.svg#bar"></use>
         </svg>
     </label>
+
     <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a routerLink="">
-           {{_servicio.info.titulo}} <sup>tm</sup></a></h1>
+        <!-- Divisor de la barra superior -->
+
+        <h1 class="rk-logo">
+            <!-- Encabezado con estilo para el logotipo -->
+            <a routerLink="">
+                <!-- Enlace con referencia vacía para que redireccione al home -->
+                {{_servicio.info.titulo}} <sup>tm</sup>
+                <!-- Muestra el título del servicio y un sup (superíndice) -->
+            </a>
+        </h1>
+
         <nav class="rk-navigation">
+            <!-- Navegación del encabezado -->
+
             <ul class="rk-menu">
-                <li routerLinkActive="active" class="rk-menu__item"><a routerLink="home"  class="rk-menu__link">Home</a>
+                <!-- Lista de enlaces del menú -->
+
+                <li routerLinkActive="active" class="rk-menu__item">
+                    <!-- Elemento de la lista con detección de ruta activa -->
+                    <a routerLink="about" class="rk-menu__link">Top5</a>
                 </li>
-                <li routerLinkActive="active" class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Top5</a>
+
+                <li routerLinkActive="active" class="rk-menu__item">
+                    <!-- Otro elemento de la lista con detección de ruta activa -->
+                    <a routerLink="home" class="rk-menu__link">Home</a>
+                    <!-- Enlace a la página "home" -->
                 </li>
             </ul>
+
             <form class="rk-search">
+                <!-- Formulario de búsqueda -->
                 <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+                <!-- Campo de entrada de búsqueda -->
                 <label for="urku-search">
+                    <!-- Etiqueta asociada al campo de búsqueda -->
                     <svg>
+                        <!-- SVG para el ícono de búsqueda -->
                         <use xlink:href="assets/img/symbols.svg#icon-search"></use>
                     </svg>
                 </label>

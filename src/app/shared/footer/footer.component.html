@@ -1,41 +1,53 @@
 <footer class="ae-container-fluid rk-footer">
+    <!-- Pie de página con contenedor y clases de estilo -->
+
     <div class="ae-grid ae-grid--collapse">
+        <!-- Rejilla para organizar contenido -->
+
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+            <!-- Primer elemento de la rejilla -->
             <ul class="rk-menu rk-footer-menu">
+                <!-- Lista de enlaces del menú -->
                 <li class="rk-menu__item">
-                    <a routerLink="about" class="rk-menu__link">About</a>
+                    <!-- Elemento de la lista -->
+                    <a routerLink="about" class="rk-menu__link">Libros</a>
                 </li>
-                <li class="rk-menu__item">
-                    <a href="documentation.html" class="rk-menu__link">Docs</a>
-                </li>
-                <li class="rk-menu__item">
-                    <a href="contact.html" class="rk-menu__link">Contact</a>
-                </li>
+                <!-- Otros elementos de la lista pueden seguir aquí -->
             </ul>
             <p class="rk-footer__text rk-footer__copy">
-                <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{ anio }} Zaira Hernandez Martinez
-                </span>Practica
+                <!-- Párrafo con texto del pie de página -->
+                <span class="ae-u-bold">© </span>
+                <span class="ae-u-bolder">{{ anio }} Zaira Hernandez Martinez</span>Practica
+                <!-- Datos dinámicos (variable "anio") -->
             </p>
         </div>
+
+        <!-- Otros elementos de la rejilla -->
+
         <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+            <!-- Segundo elemento de la rejilla -->
             <a target="_blank" [href]="_servicio.info.facebook" class="rk-social-btn">
+                <!-- Enlace con ícono para red social -->
                 <svg>
                     <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-                </svg></a><a target="_blank" [href]="_servicio.info.twitter" class="rk-social-btn">
-                <svg>
-                    <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-                </svg></a><a target="_blank" [href]="_servicio.info.instagram" class="rk-social-btn">
-                <svg>
-                    <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-                </svg></a>
+                    <!-- Ícono de Facebook cargado desde un archivo SVG -->
+                </svg>
+            </a>
+            <!-- Otros enlaces para otras redes sociales pueden seguir aquí -->
         </div>
+
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+            <!-- Tercer elemento de la rejilla -->
             <p class="rk-footer__text rk-footer__contact">
-                <span class="ae-u-bold">Email: </span><span class="ae-u-bolder">
-                    <a target="_blank" href="mailTo:{{_servicio.info.email}}" class="rk-dark-color"> {{_servicio.info.email}}
-                    </a></span>
+                <!-- Párrafo con información de contacto -->
+                <span class="ae-u-bold">Email: </span>
+                <span class="ae-u-bolder">
+                    <a target="_blank" href="mailTo:{{_servicio.info.email}}" class="rk-dark-color">
+                        {{_servicio.info.email}}
+                    </a>
+                    <!-- Enlace de correo con dirección dinámica (variable "_servicio.info.email") -->
+                </span>
             </p>
-            
         </div>
     </div>
 </footer>
